@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 450px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🎟 Movie Ticket Booking</h2>
+
+    <form action="#" method="post">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Select Movie</label>
+        <select required>
+            <option value="">-- Select Movie --</option>
+            <option>Pushpa 2</option>
+            <option>Salaar</option>
+            <option>RRR</option>
+            <option>Kalki 2898 AD</option>
+            <option>Game Changer</option>
+        </select>
+
+        <label>Show Date</label>
+        <input type="date" required>
+
+        <label>Show Time</label>
+        <select required>
+            <option>10:00 AM</option>
+            <option>1:00 PM</option>
+            <option>4:00 PM</option>
+            <option>7:00 PM</option>
+            <option>10:00 PM</option>
+        </select>
+
+        <label>Number of Tickets</label>
+        <input type="number" min="1" max="10" value="1" required>
+
+        <label>Seat Type</label>
+        <select required>
+            <option>Silver - ₹150</option>
+            <option>Gold - ₹250</option>
+            <option>Platinum - ₹400</option>
+        </select>
+
+        <button type="submit" class="btn">Book Ticket</button>
+
+    </form>
+
+    <footer>
+        &copy; 2026 Movie Ticket Booking System
+    </footer>
+
+</div>
+
+</body>
+</html>
