@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Movie Ticket Booking</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#f2f2f2;
+}
+
+.container{
+    width:400px;
+    margin:40px auto;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+    color:#d9230f;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input,select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:20px;
+    background:#d9230f;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#b71c1c;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Movie Ticket Booking</h2>
+
+<form onsubmit="bookTicket(event)">
+
+<label>Name</label>
+<input type="text" id="name" required>
+
+<label>Movie</label>
+<select id="movie">
+<option>Avatar</option>
+<option>Avengers</option>
+<option>Pushpa 2</option>
+<option>KGF 2</option>
+</select>
+
+<label>Show Time</label>
+<select id="time">
+<option>10:00 AM</option>
+<option>2:00 PM</option>
+<option>6:00 PM</option>
+<option>9:00 PM</option>
+</select>
+
+<label>Tickets</label>
+<input type="number" id="tickets" min="1" max="10" value="1">
+
+<button type="submit">Book Ticket</button>
+
+</form>
+
+</div>
+
+<script>
+
+function bookTicket(e){
+
+e.preventDefault();
+
+var name=document.getElementById("name").value;
+var movie=document.getElementById("movie").value;
+var time=document.getElementById("time").value;
+var tickets=document.getElementById("tickets").value;
+
+alert(
+"Booking Successful!\n\n"+
+"Name : "+name+
+"\nMovie : "+movie+
+"\nShow : "+time+
+"\nTickets : "+tickets
+);
+
+}
+
+</script>
+
+</body>
+</html>
